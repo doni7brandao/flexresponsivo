@@ -1,3 +1,4 @@
-# temaflex
-Tema Flex para testes com HTML 5
-Você pode visualizar este modelo clicando aqui: https://doni7brandao.github.io/temaflex/
+# Template HTML responsivo utilizando *Javascript* para sites estáticos no modelo de Portifólio
+
+**DEMONSTRAÇÃO:** https://doni7brandao.github.io/temaflex/
+
