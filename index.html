@@ -445,21 +445,46 @@ https://doni7brandao.github.io/flexresponsivo/
                     </div> <!-- /.col-md-7 -->
                     <div class="col-md-5 col-sm-6">
                         <div class="contact-form">
-                            <form method="post" name="contactform" id="contactform">
-                                <p>
-                                    <input name="Nome" type="text" id="Nome" placeholder="Seu Nome">
-                                </p>
-                                <p>
-                                    <input name="E-mail" type="text" id="E-mail" placeholder="Seu E-mail"> 
-                                </p>
-                                <p>
-                                    <input name="Assunto" type="text" id="Assunto" placeholder="Assunto"> 
-                                </p>
-                                <p>
-                                    <textarea name="comments" id="comments" placeholder="Mensagem"></textarea>    
-                                </p>
-                                <input type="submit" class="mainBtn" id="submit" value="Enviar Mensagem">
-                            </form>
+                            <form class="gform pure-form pure-form-stacked" method="POST" data-email="donizetebrand@gmail.com"
+  action="https://script.google.com/macros/s/AKfycbwfEWEnAkKoea67JNx8vYzvWfQ-eaiyKRe51CafwNJxT5AkUWo/exec">
+    <!-- alterar a ação do formulário para seu URL de script -->
+
+    <div class="form-elements">
+      <fieldset class="pure-group">
+        <label for="Nome">Nome: </label>
+        <input id="Nome" name="Nome" placeholder="Seu nome aqui" />
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="Mensagem">Mensagem: </label>
+        <textarea id="Mensagem" name="Mensagem" rows="10"
+        placeholder="Fique à vontade para no enviar sua mensagem..."></textarea>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="E-mail"><em>Seu</em> E-mail:</label>
+        <input id="E-mail" name="E-mail" type="email" value=""
+        required placeholder="Ex: donizetebrand@gmail.com"/>
+        <span class="email-invalid" style="display:none">
+          Nos envie um e-mail válido</span>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="Assunto">Assunto: </label>
+        <input id="Assunto" name="Assunto" placeholder="Qual é o assunto?" />
+      </fieldset>
+
+      <button class="button-success pure-button button-xlarge">
+        <i class="fa fa-paper-plane"></i>&nbsp;Enviar Mensagem</button>
+    </div>
+
+    <!-- Personalize esta parte da mensagem de agradecimento após o envio da mensagem: -->
+    <div class="thankyou_message" style="display:none;">
+      <h2><em>Obrigado</em> pela sua mensagem!
+        Retornaremos o se contato assim que possível!</h2>
+    </div>
+
+				</form>
                         </div> <!-- /.contact-form -->
                     </div> <!-- /.col-md-5 -->
                 </div> <!-- /.row -->
